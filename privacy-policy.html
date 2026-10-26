@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font Scout Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1d1b18; --quiet: #6e6a65; --ground: #f7f2eb; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f7f2eb; --quiet: #b9b2a8; --ground: #1d1b18; } }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  .date { color: var(--quiet); margin: 0 0 32px; }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Font Scout Privacy Policy</h1>
+  <p class="date">Effective 26 October 2026</p>
+
+  <p>Font Scout is a Chrome extension that shows the fonts a web page uses and saves available web font files associated with that page. It works with the Font Scout app for Mac. This policy covers the extension.</p>
+
+  <h2>Data used by the extension</h2>
+  <p>Font Scout processes information locally to inspect and save web fonts. It has no analytics, advertising, or account system and does not automatically upload browsing information or diagnostics to the developer.</p>
+  <ul>
+    <li><strong>Page font information.</strong> The panel reads font properties, style sheets and font resources on the page you activate it on. A script also runs at page start on HTTP(S) pages to record fonts created through the FontFace API in that page’s memory.</li>
+    <li><strong>Font download names.</strong> The extension searches Chrome’s completed font downloads and uses their filenames to mark previously downloaded fonts. It does not send this download history to the developer.</li>
+    <li><strong>Local Mac library.</strong> If the Font Scout Mac app is running, the extension requests font-library hashes from http://127.0.0.1:51842/library on your computer. It does not upload page contents or font files to the app.</li>
+    <li><strong>Settings and diagnostics.</strong> Theme and cursor-hint settings and up to 30 recent errors are stored in Chrome’s local extension storage. Error records can include timestamps, component names, page URLs (which may include query parameters), messages and stack traces.</li>
+  </ul>
+  <h2>Network requests and downloads</h2>
+  <p>To inspect and save fonts, Font Scout may request style sheets and font files from the websites hosting those resources, including another domain used by the page. These hosts receive normal network request information, such as your IP address and the requested resource URL. The extension’s CSS and font fetches omit credentials. Downloads may also be handled by Chrome’s downloads API under Chrome’s request handling; this policy does not promise that every download request is cookie-free.</p>
+  <p>When you choose Download or Option-click text with an available font file, the file is saved to Downloads. Files may be requested again from their host. Check the font’s license before using it in your work.</p>
+  <h2>Storage, deletion and support</h2>
+  <p>Page-level font information is kept in memory for that page. Settings remain in local extension storage until changed or the extension is removed. Error records are limited to the latest 30; you can delete them using Clear in the panel’s Settings. Removing the extension removes its local extension storage. Downloaded files and Chrome’s download history are managed separately through your computer and Chrome.</p>
+  <p>Copy Errors copies diagnostic records to your clipboard; it does not send them. Review the copied text, including page URLs, before choosing to share it with support. If you voluntarily send a report, the recipient receives the information you include.</p>
+  <h2>Limited use</h2>
+  <p>Font Scout uses the data described here only to provide its font inspection, download, library-matching and diagnostic features. It does not sell user data or use it for advertising, unrelated purposes or creditworthiness decisions. Its use of user data complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+  <h2>Changes</h2>
+  <p>This policy will be updated when the extension’s data practices change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:rost.kir@pm.me">rost.kir@pm.me</a>.</p>
+</main>
+</body>
+</html>
